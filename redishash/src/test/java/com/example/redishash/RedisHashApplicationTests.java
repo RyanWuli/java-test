@@ -128,4 +128,8 @@ class RedisHashApplicationTests {
             System.out.println("不是月末天");
         }
     }
+
+    public void testCommit() {
+
+    }
 }
