@@ -27,6 +27,8 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 /**
@@ -34,6 +36,7 @@ import java.util.*;
  */
 public class AppTest 
 {
+
     /**
      * Rigorous Test :-)
      */
@@ -213,4 +216,24 @@ public class AppTest
         long l2 = l1 / 1000;
         System.out.println(l2);
     }
+
+    @Test
+    public void testLongInt() {
+        Object o = 123456l;
+        Long l = Long.valueOf(o.toString());
+        int i = l.intValue();
+        System.out.println(i);
+    }
+
+    @Test
+    public void testString() {
+        String s = "<p data-v-3d62bbf1=\"\">测试学校简介4</p><p><br></p>";
+        int i = s.indexOf(">");
+        System.out.println(i);
+        int j = s.indexOf("</p>");
+        System.out.println(j);
+        String substring = s.substring(i + 1, j);
+        System.out.println(substring);
+    }
+
 }

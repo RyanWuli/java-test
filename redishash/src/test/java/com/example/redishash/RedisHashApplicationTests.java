@@ -16,6 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Set;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -132,4 +133,25 @@ class RedisHashApplicationTests {
     public void testCommit() {
 
     }
+
+    @Test
+    public void testApp() {
+        String s = "2020-05";
+        String sub = s.substring(s.indexOf("-") + 1);
+        System.out.println(sub);
+    }
+
+    @Test
+    public void testUUID() {
+        UUID uuid = UUID.randomUUID();
+        System.out.println(uuid.toString());
+
+    }
+
+    @Test
+    public void transfer() {
+        System.out.println("\\u6570\\u636E\\u5E93\\u7D22\\u5F15\\uFF0C\\u9ED8\\u8BA4\\u4E3A0");
+    }
+
+
 }
