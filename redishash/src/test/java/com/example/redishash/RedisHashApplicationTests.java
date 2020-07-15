@@ -150,7 +150,7 @@ class RedisHashApplicationTests {
 
     @Test
     public void transfer() {
-        System.out.println("\\u6570\\u636E\\u5E93\\u7D22\\u5F15\\uFF0C\\u9ED8\\u8BA4\\u4E3A0");
+        System.out.println("\u6570\u636E\u5E93\u7D22\u5F15\uFF0C\u9ED8\u8BA4\u4E3A0");
     }
 
 
